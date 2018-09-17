@@ -1,0 +1,14 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("utils", "data")
+importFrom("MASS","rlm")
+importFrom("MASS","psi.huber")
+importFrom("MASS","psi.bisquare")
+importFrom("stats", "lm", "median")
+importFrom("graphics", "axis", "legend")
+importFrom("stats", "mad")
+export(eff,ESL_O)
+export(rho.h,psi.Huber,dpsi.Huber)
+export(rho.b,psi.Tukey,dpsi.Tukey)
+export(rho.e,psi.Exp,dpsi.Exp)
+
+

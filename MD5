@@ -1,0 +1,8 @@
+3f3e1c776ddd3574b88183e68b2d686a *DESCRIPTION
+e684857efafa7b194d6d0459581b4b22 *NAMESPACE
+2bae9720c36a6d5ea17f668691892b0f *R/DD-internal.R
+2801b315c3d0a5a1cb7b2af36ff8b95a *R/rlmDD.R
+86db0b2c4c3a8a7f44ae40bbaf3ab29e *data/plasma.RData
+4f1e7315c723f966f354edb580e1ef61 *man/DD-internal.Rd
+887918ce9fb1ef10e70d2bcaff33e50e *man/plasma.Rd
+b09ddfb1b3755e554a3d4070a3dca96a *man/rlmDD.Rd
