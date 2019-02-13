@@ -10,6 +10,9 @@
 \alias{dpsi.Tukey}
 \alias{psi.Exp}
 \alias{dpsi.Exp}
+\alias{chi}
+\alias{create_lag}
+
 \title{Internal Functions}
 \description{
 Internal functions not to be used by the user.

@@ -125,3 +125,18 @@ ESL_O<-function(x,xx,y,beta,newc,maxit=500, toler=1e-6)
   list(esti=rlm1, Std.Error=summary(rlm1)$coef[,2], weights=w, tunning=newc, R2=r2)
 }
 
+
+chi<- function(obj){
+  pmin(obj^2/1.041^2,1)-0.5
+}
+
+create_lag <- function(vec, n.lag){
+  list.lag<-list()
+  for(i in 1: n.lag){
+    lagged.vec <- c(rep(NA,i),vec)[1:length(vec)]
+    list.lag[[paste0("lag", i)]] <- lagged.vec
+  }
+  return(list.lag)
+  
+}
+
