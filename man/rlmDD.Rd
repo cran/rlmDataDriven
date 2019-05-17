@@ -17,7 +17,7 @@ rlmDD(yy, xx, beta0, betaR, method, plot)
 \arguments{
   \item{yy}{Vector representing the response variable
 }
-  \item{xx}{Design matrix of the covariates inclunding the intercept in the first column
+  \item{xx}{Design matrix of the covariates excluding the intercept in the first column
 }
   \item{beta0}{Initial parameter estimate using \code{lm}
 
@@ -67,15 +67,18 @@ data(stackloss)
 
 LS <- lm(stack.loss ~ stack.x)
 RB <- rlm(stack.loss ~ stack.x, psi = psi.huber, k = 1.345)
-DD1 <- rlmDD(stack.loss, stack.x, LS$coef, RB$coef, method = "Huber", plot = "Y")
+DD1 <- rlmDD(stack.loss, stack.x, LS$coef, RB$coef, method = "Huber", 
+plot = "Y")
 
 LS <- lm(stack.loss ~ stack.x)
 RB <- rlm(stack.loss ~ stack.x, psi = psi.bisquare, c = 4.685)
-DD2 <- rlmDD(stack.loss, stack.x, LS$coef, RB$coef, method = "Bisquare", plot = "Y")
+DD2 <- rlmDD(stack.loss, stack.x, LS$coef, RB$coef, method = "Bisquare", 
+plot = "Y")
 
 LS <- lm(stack.loss ~ stack.x)
 RB <- rlm(stack.loss ~ stack.x, psi = psi.huber, k = 1.345)
-DD3 <- rlmDD(stack.loss, stack.x, LS$coef, RB$coef, method = "Exponential", plot = "Y")
+DD3 <- rlmDD(stack.loss, stack.x, LS$coef, RB$coef, method = "Exponential",
+plot = "Y")
 
 
 ## Plasma dataset

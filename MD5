@@ -1,12 +1,12 @@
-3295275f7edb1c08e8748a8314321f9b *DESCRIPTION
+e4a16057ed578ad5fb30c042d40747ff *DESCRIPTION
 83af3ef5dc9d34f8c8636e908f2db9af *NAMESPACE
 a856d9caba372bc66122240d916e9754 *R/DD-internal.R
 2801b315c3d0a5a1cb7b2af36ff8b95a *R/rlmDD.R
-98b0f6d67265eb93b6cdda6045faffc5 *R/rlmDD_het.R
+66d59e96135aa41438286e46519622fb *R/rlmDD_het.R
 611920c4014bf0220079dab79a9f8d38 *R/whm.R
 86db0b2c4c3a8a7f44ae40bbaf3ab29e *data/plasma.RData
 1cbee3fec615e7b13578f68d8ffc1f75 *man/DD-internal.Rd
 887918ce9fb1ef10e70d2bcaff33e50e *man/plasma.Rd
-ba7fcd8d357187f8d5fc09425658376f *man/rlmDD.Rd
-0ed97475764a9ede18e52152941f939a *man/rlmDD_het.Rd
-505e7f3a60fe4534f1195efd8c708c34 *man/whm.Rd
+43523c88c72076dfbf579c2d90ce0722 *man/rlmDD.Rd
+a09e824ab9ffbf7d5388e97fbf574e74 *man/rlmDD_het.Rd
+8df3db3323c65b5dde9a5ff4fc7e119b *man/whm.Rd

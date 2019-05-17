@@ -63,10 +63,10 @@ yy <- stack.loss
 xx <- model.matrix(stack.loss ~ stack.x)
 
 #With power function as variance function
-WHM_p <- whm(yy, xx, var.function = "power", tuning.para = 1.345, ite = 5)
+WHM_p <- whm(yy, xx, var.function = "power", tuning.para = 1.345)
 
 #With exponential function as variance function
-WHM_e <- whm(yy, xx, var.function = "exponential", tuning.para = 1.345, ite = 5)
+WHM_e <- whm(yy, xx, var.function = "exponential", tuning.para = 1.345)
 
 
 }

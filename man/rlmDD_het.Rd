@@ -12,8 +12,9 @@ First, a M-estimation is performed on the data assuming that the variance is con
 Finally, lagged term are built and added to the regression model therefore accounting for temporal correlations. The loss function used is Huber's function.
 }
 \usage{
-rlmDD_het(yy, xx, var.function = c("power", "exponential"), phi.par = TRUE, 
-tuning.para = NULL, step = 0.1, n.lag = NULL, print.summary = TRUE)
+rlmDD_het(yy, xx, var.function = c("power", "exponential"),
+phi.par = TRUE, tuning.para = NULL, step = 0.1, n.lag = NULL,
+print.summary = TRUE)
 }
 
 \arguments{
@@ -95,7 +96,7 @@ qqline(least_square$residuals, col = "red", lwd = 2)
 
 #With choice of optimal tuning parameter and 2 lags. 
 #Note that if lag = NULL, a Pacf plot will appear to help you choose 
-#the number of lags  and you will need to input this number in the console. 
+#the number of lags, you will need to input this number in the console. 
 
 model_1 <- rlmDD_het(yy, xx, var.function = "exponential", 
                                     tuning.para = NULL, n.lag = 2)
